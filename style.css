@@ -1,0 +1,42 @@
+tr {
+    margin: 5px; 
+}
+
+.header {
+    background: blueviolet;
+  }
+    
+.title {
+    color: black;
+    text-align: center;
+    }
+  
+.data {
+    min-height: 275px;
+    }
+
+.box {
+      background-color: blueviolet;
+    }
+
+  
+.forecast {
+    background-color: blueviolet;
+    margin: 5px;
+    min-height: 275px;
+  }
+
+  
+#info {
+    padding-top: 15px;
+  }
+  
+#weather {
+    background-color: blueviolet;
+  }
+
+#submit {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  

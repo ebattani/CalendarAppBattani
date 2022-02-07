@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather</title>
+
+    <!--CSS Style sheet and Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!--Title and header-->
+    <section class="header hero-body" >
+     
+          <h1 class="title">Weather Forecast</h1>
+    
+    </section>
+
+    <section id="info">
+
+      <div class="container">
+
+        <div class="columns">
+
+          <div class="column is-one-quarter">
+            
+            <!--User input. Search for city-->
+            <form>
+
+              <input id="cityInput" class="input is-info" placeholder="Enter city name"/>
+
+              <button id="submit" class="button" type="submit"> Search </button>
+
+            </form>
+
+
+            <div class="box">
+
+              <!--Holds the searched list and clear button-->
+              <div class="table-container">
+
+                <table id="pastSearched" class="table is-bordered"> <tr></tr> </table>
+
+                <button id="clr-btn">CLEAR</button>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Most recent search data being displayed for the city-->
+          <div class="column">
+
+            <div id="weather" class="columns box content">
+
+              <div class="column data">
+
+                <h2 id="cityName"></h2>
+                <h4 id="conditions"></h4>
+                <h4 id="temperature"></h4>
+                <h4 id="humidity"></h4>
+                <h4 id="windSpeed"></h4>
+
+                <h4 id="uvIndex"></h4>
+                
+
+              </div>
+
+              <!--Icon-->
+              <div class="column">
+
+                <div id="pic"></div>
+                
+              </div>
+
+            </div>
+
+            <!--Five day forcast container and then shows data for each of the 5 days-->
+            <div class="container">
+
+              <div class="content">
+
+                <h2>5-Day Forecast:</h2>
+
+                <div class="columns">
+
+                  <div class="column forecast">
+
+                    <div id="day1">
+
+                      <h3 id="date1"></h3>
+
+                      <div id="pic1"></div>
+
+                      <h4 id="temperature1"></h4>
+
+                      <h4 id="hum1"></h4>
+
+                    </div>
+
+                  </div>
+
+                  <div class="column forecast">
+
+                    <div id="day2">
+
+                      <h3 id="date2"></h3>
+
+                      <div id="pic2"></div>
+
+                      <h4 id="temperature2"></h4>
+
+                      <h4 id="hum2"></h4>
+
+                    </div>
+
+                  </div>
+
+                  <div class="column forecast">
+
+                    <div id="day3">
+
+                      <h3 id="date3"></h3>
+
+                      <div id="pic3"></div>
+
+                      <h4 id="temperature3"></h4>
+
+                      <h4 id="hum3"></h4>
+
+                    </div>
+
+                  </div>
+
+                  <div class="column forecast">
+
+                    <div id="day4">
+
+                      <h3 id="date4"></h3>
+
+                      <div id="pic4"></div>
+
+                      <h4 id="temperature4"></h4>
+
+                      <h4 id="hum4"></h4>
+
+                    </div>
+
+                  </div>
+
+                  <div class="column forecast">
+
+                    <div id="day5">
+
+                      <h3 id="date5"></h3>
+
+                      <div id="pic5"></div>
+
+                      <h4 id="temperature5"></h4>
+
+                      <h4 id="hum5"></h4>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Jquery and Moment.JS libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
